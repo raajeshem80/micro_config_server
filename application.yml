@@ -18,6 +18,7 @@ spring.cloud.refresh.refreshable: false
 
 # Logging
 logging.level.org.springframework: INFO
+logging.pattern.console=%14date{dd.MM.yyyy kk:mm:ss.SSS} [%1level] %30.30logger{1}\.%replace(%replace(%replace(%caller{3..4}){'[\n\r]',''}){'\\(.+\\)$','()'}){'^.+\\.',''} : %msg%n
 
 # Metrics
 management:
