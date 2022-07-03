@@ -3,7 +3,7 @@ zuul:
   ignoredServices: '*'
   routes:
     user-service: /user/**
-    user-service: /product/**
+    product-service: /product/**
     api-gateway: /gateway/**
 
 server:
@@ -12,6 +12,3 @@ server:
     enabled: true
     mime-types: application/json,text/css,application/javascript
     min-response-size: 2048
-
-# Internationalization
-spring.messages.basename: messages/messages
