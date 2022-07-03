@@ -1,0 +1,17 @@
+zuul:
+  prefix: /api
+  ignoredServices: '*'
+  routes:
+    user-service: /user/**
+    user-service: /product/**
+    api-gateway: /gateway/**
+
+server:
+  port: 8085
+  compression:
+    enabled: true
+    mime-types: application/json,text/css,application/javascript
+    min-response-size: 2048
+
+# Internationalization
+spring.messages.basename: messages/messages
