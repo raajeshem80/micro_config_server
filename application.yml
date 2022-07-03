@@ -26,8 +26,14 @@ spring.cloud.refresh.refreshable: false
 
 
 # Logging
-logging.level.org.springframework: INFO
-logging.pattern.console: %d{yyyy-MM-dd HH:mm:ss.SSS} -%5p %class{0}.%M - %msg%n%throwable
+logging:
+  level:
+    com:
+      howtodoinjava: DEBUG
+    org:
+      springframework: INFO
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
 
 # Metrics
 management:
