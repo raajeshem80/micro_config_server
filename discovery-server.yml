@@ -11,3 +11,8 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
+info:
+  component: DiscoveryServer
+  artifact: discovery-server
+  version: 5.0.0
+

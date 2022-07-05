@@ -15,4 +15,14 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-
+  rabbitmq:
+    host: rabbit
+    port: 5672
+    username: rajesh
+    password: rajesh
+    virtualHost: /
+    
+info:
+  component: ProductService
+  artifact: product-service
+  version: 5.0.0

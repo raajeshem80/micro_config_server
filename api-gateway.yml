@@ -30,3 +30,15 @@ spring:
             - Path=/api/product/**
           filters:
             - StripPrefix=2
+  rabbitmq:
+    host: rabbit
+    port: 5672
+    username: rajesh
+    password: rajesh
+    virtualHost: /
+
+info:
+  component: ApiGateway
+  artifact: api-gateway
+  version: 5.0.0
+  
