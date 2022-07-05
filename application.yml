@@ -35,7 +35,7 @@ logging:
   pattern:
     console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
 
-logstash.servers: logstash:5000
+logstash.servers: localhost:5000
 
 # Metrics
 management:
