@@ -1,0 +1,22 @@
+﻿server:
+  port: 9095
+
+spring:
+  datasource:
+    password: raje1409
+    url: jdbc:postgresql://localhost:5432/users
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+info:
+  component: AuthService
+  artifact: auth-service
+  version: 5.0.0
