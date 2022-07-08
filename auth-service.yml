@@ -21,6 +21,14 @@ spring:
           lob:
             non_contextual_creation: true
 
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: rajesh
+    password: rajesh
+    virtualHost: /
+
 info:
   component: AuthService
   artifact: auth-service
