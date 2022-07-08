@@ -1,6 +1,11 @@
 ﻿server:
   port: 9095
 
+jwt:
+  secret: secretkey
+  token:
+    validity: 86400000
+    
 spring:
   datasource:
     password: raje1409

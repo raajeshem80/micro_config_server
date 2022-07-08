@@ -1,6 +1,11 @@
 server:
   port: 8085
 
+jwt:
+  secret: secretkey
+  token:
+    validity: 86400000
+    
 spring:
   rabbitmq:
     host: localhost
