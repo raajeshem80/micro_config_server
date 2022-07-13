@@ -25,7 +25,15 @@ management.endpoints.web.exposure.include: "*"
 spring.cloud.refresh.refreshable: false
 
 
-
+# Logging
+logging:
+  level:
+    com:
+      micro: DEBUG
+    org:
+      springframework: INFO
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p %class{0}.%M - %msg%n%throwable'
 
 logstash.servers: localhost:5000
 
