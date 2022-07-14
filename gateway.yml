@@ -7,14 +7,6 @@ jwt:
     validity: 86400000
     
 spring:
-  cloud:
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-              allowedOrigins: "*"
-              allowedMethods: "*"
-              allowedHeaders: "*"    
   rabbitmq:
     host: localhost
     port: 5672
