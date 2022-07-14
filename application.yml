@@ -32,6 +32,7 @@ logging:
       micro: DEBUG
     org:
       springframework: INFO
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
   pattern:
     console: '%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p %class{0}.%M - %msg%n%throwable'
 
