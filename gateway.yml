@@ -11,9 +11,9 @@ spring:
     gateway:
       globalcors:
         corsConfigurations:
-          allowedOrigins: "*"
-          allowedMethods: "*"
-          allowedHeaders: "*"    
+          '[/**]':
+              allowedMethods: "*"
+              allowedHeaders: "*"    
   rabbitmq:
     host: localhost
     port: 5672
