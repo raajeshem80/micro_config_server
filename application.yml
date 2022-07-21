@@ -37,7 +37,18 @@ logging:
   pattern:
     console: '%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p %class{0}.%M - %msg%n%throwable'
 
-logstash.servers: localhost:5000
+# Tomcat logging
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      rotate: false
+      suffix: .log
+      prefix: access_log
+      directory: /tmp
+      pattern: common
+
+logstash.servers: logstash:5000
 
 # Metrics
 management:
@@ -46,6 +57,8 @@ management:
       enabled: true
     prometheus:
       enabled: true
+    health:
+      show-details: always
   endpoints:
     web:
       exposure:
@@ -54,6 +67,8 @@ management:
     export:
       prometheus:
         enabled: true
+    tags:
+      application: MicroServicePOC
 
 eureka:
   instance:
