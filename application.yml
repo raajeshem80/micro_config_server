@@ -48,7 +48,7 @@ server:
       directory: /tmp
       pattern: common
 
-logstash.servers: logstash:5000
+logstash.servers: localhost:5000
 
 # Metrics
 management:
