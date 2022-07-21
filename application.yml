@@ -32,26 +32,12 @@ logging:
       micro: DEBUG
     org:
       springframework: INFO
-      springframework.web.HttpLogging: DEBUG
-      springframework.security: DEBUG
-      springframework.cloud.gateway: DEBUG
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
     com.netflix.eureka.registry.AbstractInstanceRegistry: WARN
   pattern:
     console: '%d{yyyy-MM-dd HH:mm:ss.SSS} -%5p %class{0}.%M - %msg%n%throwable'
 
-# Tomcat logging
-server:
-  tomcat:
-    accesslog:
-      enabled: true
-      rotate: false
-      suffix: .log
-      prefix: access_log
-      directory: /tmp
-      pattern: common
-
-logstash.servers: logstash:5000
+logstash.servers: localhost:5000
 
 # Metrics
 management:
@@ -60,8 +46,6 @@ management:
       enabled: true
     prometheus:
       enabled: true
-    health:
-      show-details: always
   endpoints:
     web:
       exposure:
@@ -70,8 +54,6 @@ management:
     export:
       prometheus:
         enabled: true
-    tags:
-      application: MicroServicePOC
 
 eureka:
   instance:
