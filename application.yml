@@ -32,6 +32,9 @@ logging:
       micro: DEBUG
     org:
       springframework: INFO
+      springframework.web.HttpLogging: DEBUG
+      springframework.security: DEBUG
+      springframework.cloud.gateway: DEBUG
     com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
     com.netflix.eureka.registry.AbstractInstanceRegistry: WARN
   pattern:
