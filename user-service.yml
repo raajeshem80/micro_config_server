@@ -1,5 +1,13 @@
 ﻿server:
   port: 9091
+  tomcat:
+    accesslog:
+      enabled: true
+      rotate: false
+      suffix: .log
+      prefix: access_log
+      directory: /tmp
+      pattern: common
 
 spring:
   datasource:
@@ -26,3 +34,4 @@ info:
   component: UserService
   artifact: user-service
   version: 5.0.0
+
