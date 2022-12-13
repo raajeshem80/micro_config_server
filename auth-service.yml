@@ -4,7 +4,10 @@
 jwt:
   secret: secretkey
   token:
-    validity: 86400000
+    validity: 60000
+    jwtRefreshExpirationMs: 120000
+  jwtCookieName: bezkoder-jwt
+  jwtRefreshCookieName: bezkoder-jwt-refresh
     
 spring:
   datasource:
